@@ -108,6 +108,12 @@ public class Card {
         return _rank + " of " + _suit;
     }
 
+    public String toString() {
+        String _rank = rankToString(rank);
+        String _suit = suitToString(suit);
+        return _rank + " of " + _suit;
+    }
+
     public static void main(String[] args) {
         assert rankToString(ACE) == "Ace";
         assert rankToString(DEUCE) == "Deuce";

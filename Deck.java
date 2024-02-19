@@ -3,21 +3,30 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Deck {
-    private List<Card> deck;
+    private Card[][] cards;
+    public static int numSuits = 4;
+    public static int numRanks = 13;
+    public static int numCards = numRanks * numSuits;
 
     public Deck() {
-        deck = new ArrayList<Card>();
-        for (int i = 1; i <= 13; i++) {
-            for (int j = 1; j <= 4; j++) {
-                deck.add(new Card(i, j));
+        cards = new Card[numSuits][numRanks];
+        for (int s = Card.DIAMONDS; s <= Card.SPADES; s++) {
+            for (int r = Card.ACE; r <= Card.KING; r++) {
+                cards[s - 1][r - 1] = new Card(r, s);
             }
         }
     }
 
+    public Card getCard(int suit, int rank) {
+        return cards[suit][rank];
+    }
+
     public static void main(String[] args) {
         Deck myDeck = new Deck();
-        for (Card card : myDeck.deck) {
-            System.out.println(card.cardToString(card.getRank(), card.getSuit()));
+        for (int s = Card.DIAMONDS; s <= Card.SPADES; s++) {
+            for (int r = Card.ACE; r <= Card.KING; r++) {
+                System.out.println(myDeck.cards[s - 1][r - 1].toString());
+            }
         }
     }
 }
