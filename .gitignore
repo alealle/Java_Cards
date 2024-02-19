@@ -1,6 +1,9 @@
 # Compiled class file
 *.class
 
+# tags file
+tags
+
 # Log file
 *.log
 

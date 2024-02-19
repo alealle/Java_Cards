@@ -15,6 +15,8 @@ Deck	Deck.java	/^public class Deck {$/;"	c
 EIGHT	Card.java	/^    public final static int EIGHT = 8;$/;"	f	class:Card
 FIVE	Card.java	/^    public final static int FIVE = 5;$/;"	f	class:Card
 FOUR	Card.java	/^    public final static int FOUR = 4;$/;"	f	class:Card
+GameOfCards	GameOfCards.java	/^public class GameOfCards {$/;"	c
+HAND_SIZE	GameOfCards.java	/^    private final int HAND_SIZE = 5;$/;"	f	class:GameOfCards	file:
 HEARTS	Card.java	/^    public final static int HEARTS = 3;$/;"	f	class:Card
 IsValidRank	Card.java	/^    public static boolean IsValidRank(int rank) {$/;"	m	class:Card
 IsValidSuit	Card.java	/^    public static boolean IsValidSuit(int suit) {$/;"	m	class:Card
@@ -34,6 +36,7 @@ getRank	Card.java	/^    public int getRank() {$/;"	m	class:Card
 getSuit	Card.java	/^    public int getSuit() {$/;"	m	class:Card
 main	Card.java	/^    public static void main(String[] args) {$/;"	m	class:Card
 main	Deck.java	/^    public static void main(String[] args) {$/;"	m	class:Deck
+main	GameOfCards.java	/^    public static void main(String[] args) {$/;"	m	class:GameOfCards
 numCards	Deck.java	/^    public static int numCards = numRanks * numSuits;$/;"	f	class:Deck
 numRanks	Deck.java	/^    public static int numRanks = 13;$/;"	f	class:Deck
 numSuits	Deck.java	/^    public static int numSuits = 4;$/;"	f	class:Deck
