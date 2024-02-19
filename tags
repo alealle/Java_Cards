@@ -28,12 +28,17 @@ SPADES	Card.java	/^    public final static int SPADES = 4;$/;"	f	class:Card
 TEN	Card.java	/^    public final static int TEN = 10;$/;"	f	class:Card
 THREE	Card.java	/^    public final static int THREE = 3;$/;"	f	class:Card
 cardToString	Card.java	/^    public static String cardToString(int rank, int suit) {$/;"	m	class:Card
-deck	Deck.java	/^    private List<Card> deck;$/;"	f	class:Deck	file:
+cards	Deck.java	/^    private Card[][] cards;$/;"	f	class:Deck	file:
+getCard	Deck.java	/^    public Card getCard(int suit, int rank) {$/;"	m	class:Deck
 getRank	Card.java	/^    public int getRank() {$/;"	m	class:Card
 getSuit	Card.java	/^    public int getSuit() {$/;"	m	class:Card
 main	Card.java	/^    public static void main(String[] args) {$/;"	m	class:Card
 main	Deck.java	/^    public static void main(String[] args) {$/;"	m	class:Deck
+numCards	Deck.java	/^    public static int numCards = numRanks * numSuits;$/;"	f	class:Deck
+numRanks	Deck.java	/^    public static int numRanks = 13;$/;"	f	class:Deck
+numSuits	Deck.java	/^    public static int numSuits = 4;$/;"	f	class:Deck
 rank	Card.java	/^    private final int rank;$/;"	f	class:Card	file:
 rankToString	Card.java	/^    public static String rankToString(int rank) {$/;"	m	class:Card
 suit	Card.java	/^    private final int suit;$/;"	f	class:Card	file:
 suitToString	Card.java	/^    public static String suitToString(int suit) {$/;"	m	class:Card
+toString	Card.java	/^    public String toString() {$/;"	m	class:Card
